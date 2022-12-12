@@ -1,0 +1,278 @@
+body {
+    background-color: rgba(252,254,255);
+    scroll-behavior: smooth;
+    max-width: 100%;
+    }
+    
+    /*Start - Landing Page*/
+    .btn {
+        border-radius: 20px;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        box-shadow: 0 0.125em 0.25em #0004;
+        background-color: black;
+        background:radial-gradient(ellipse,rgb(158, 156, 156), rgb(182, 177, 177), rgb(221, 217, 217));
+        color: white;
+        }
+        
+        .card {
+            border-radius: 1vw;
+            box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
+            }
+            
+          .card::before, .card::after {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            transform: scale3d(0, 0, 1);
+            transition: transform .3s ease-out 0s;
+            background: rgba(255, 255, 255, 0.1);
+            content: '';
+            pointer-events: none;
+            border-radius: 1vw;
+            }
+            .card::before {
+                transform-origin: left top;
+                border-radius: 1vw;
+                }
+              
+              .card::after {
+                transform-origin: right bottom;
+                border-radius: 1vw;
+                }
+              
+              .card:hover::before, .card:hover::after, .card:focus::before, .card:focus::after {
+                transform: scale3d(1, 1, 1);
+                border-radius: 1vw;
+                }
+            /*Start - Landing Page*/
+
+/*Start - FOOTER attributes*/  
+  .fa:hover {
+    opacity: 0.7;
+    }
+
+  .fa-phone, .fa-mobile-phone, .fa-envelope-o {
+    color: white;
+    }
+.fa-facebook, .fa-instagram {
+    text-decoration: none;
+    font-size: 5vh;
+}
+/*End - FOOTER attributes*/  
+
+/*start - OUR STORY PAGE*/
+#ourstory1stcontainerIMG {
+  max-width: 100%;
+  height: 40vh;
+  background-image: url('https://rare-gallery.com/uploads/posts/520570-Coffee-Coffee.jpg');
+  background-attachment: fixed;
+  background-size: 100%;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  background-color: black;
+  font-family: papyrus;
+  color: white;
+}
+
+#firstparagraph , #thirdparagraph {
+  text-align: justify;
+  padding-left: 7%;
+  padding-right: 7%;
+  padding-top: 2%;
+}
+
+#secondparagraph1strow , #fourthparagraph1strow {
+  padding-left: 7%;
+  padding-right: 7%;
+}
+
+#secondparagraph1strowcol1, #fourthparagraph1strowcol2 {
+  text-align: justify;
+  font-size: 75%;
+  padding: 2vw;
+  padding-top: 3vh;
+}
+
+#background {
+  display: flex;
+  width: 80%;
+  height: 48vh;
+  overflow: hidden;
+  padding-top: 3vh;
+  margin-left: 7vw;
+  margin-right: 7vw;
+}
+
+#story {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 30vw;
+  height: 40vh;
+  background-color: white;
+  padding: 2vmin;
+  border-radius: 2vmin;
+  margin-left: 7vw;
+  box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
+}
+
+#firstparagraph p, #col-story p, #secondparagraph1strowcol1 p, #thirdparagraph p, #fourthparagraph1strowcol2 p, #cardbodyheadquarters p, #cardbodyfoodpanda p, #rowfollowus p {
+  color: black;
+  text-align: justify;
+  width: 100%;
+  overflow: hidden;
+}
+
+#story::before {
+  position: absolute;
+  width: calc(55% - 2px);
+  height: calc(80% - 2px);
+  background: white;
+  border-radius: 100%;
+  filter: drop-shadow(15vmin 15vmin 22vmin orangered);
+  transform-box: fill-box;
+  -webkit-transform-box: fill-box;
+  transform-origin: center;
+  -webkit-transform-origin: center;
+  content: "";
+  z-index: -10;
+  animation: shadowRotate 3s linear infinite;
+}
+
+@keyframes shadowRotate {
+  to {transform: rotateZ(360deg);}
+}
+  
+.fa {
+  padding-left: 2vw;
+  font-size: 5vmin;
+  width: 1vw;
+  text-decoration: none;
+} 
+/*end - OUR STORY PAGE*/
+
+/*start - BRANCHES PAGE*/
+#branchcard {
+  position: relative;
+  background:rgba(241, 111, 35);
+  border: 1px solid #433f0e;
+  border-radius: 15px;
+  box-shadow: 15px 15px 37px -10px #7e7e7e;
+  overflow: hidden;
+}
+
+#branchcard:hover {cursor: pointer;}
+
+#branchname, #branchdetails {
+  margin-bottom: clamp(.5rem, 2%, 1rem);
+  transition: transform .4s ease-in-out, opacity .4s ease-in-out;
+}
+
+.toggled #branchdetails, .toggled #branchname {
+  transform: translateY(100px);
+  opacity: 0;
+}
+
+#mapcontainer:hover {
+  right: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#mapcontainer {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+  width: 20%;
+  height: 100%;
+  background-size: cover;
+  transition: all .4s ease-in-out .075s;
+}
+
+#branchimageholder {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  transform: translateY(-50%);
+  width: 20%;
+  height: 90%;
+  background-size: cover;
+  border-radius: 0 5px 5px 0;
+  box-shadow: 3px 3px 10px 0 rgba(0 0 0 / 0.7);
+  transition: all .4s ease-in-out .075s;
+}
+#branchimageholder:hover {
+  right: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.toggled #branchimageholder {
+  right: 0;
+  height: 100%;
+  width: 100%;
+}
+/*end - BRANCHES PAGE*/
+
+/*start - RATES PAGE*/
+#ratescontainerIMG {
+  max-width: 100%;
+  height: 72vh;
+  background-image: url('rates\ header\ img.jpg');
+  background-size: 100%;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-color: black;
+  }  
+
+  #ratescontainerIMGsm {
+    max-width: 100%;
+    height: 30vh;
+    background-image: url('rates\ header\ img.jpg');
+    background-size: 100%;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-color: black;
+    }
+  
+  #colrates {
+    float: left;
+    width: 33.33%;
+    padding: 5vmin;
+    text-align: center;
+    font-size: 3vmin;
+    cursor: pointer;
+    color: black;
+    font-family: papyrus;
+    background-color: gainsboro;
+    background:radial-gradient(ellipse,rgb(206, 204, 204), rgb(240, 238, 238), white);
+  }  
+
+  #b1 {
+    padding: 20px;
+    color: black;
+    margin-left: 10vw; 
+    font-size: 1.5vw; 
+    width: 70%; 
+    background-color: rgba(240, 238, 238, 0.5);
+    }
+
+  #b2, #b3 {
+    padding: 20px;
+    color: black;
+    margin-left: 10vw; 
+    font-size: 1.5vw; 
+    width: 70%; 
+    background-color: rgba(240, 238, 238, 0.5);
+    display:none;
+  }
+  /*end - RATES PAGE*/

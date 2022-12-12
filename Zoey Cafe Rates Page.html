@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="icon" href="zoey logo navbrand transparent.png">
+  <link rel="stylesheet" href="zoey cafe.css">
+  <title>Zoey Cafe Rates</title>
+  <style>
+    body {
+        background-color: rgba(252,254,255);
+        scroll-behavior: smooth;
+        max-width: 100%;
+      }
+
+      .fa:hover {
+        opacity: 0.7;
+      }
+
+      .fa-facebook , .fa-instagram, .fa-phone, .fa-mobile-phone, .fa-envelope-o {
+        color: white;
+      }
+
+      .btn {
+        border-radius: 20px;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        box-shadow: 0 0.125em 0.25em #0004;
+      }
+
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      .closebtn {
+        float: right;
+        color: black;
+        font-size: 35px;
+        cursor: pointer;
+      }
+
+      .card {
+        border-radius: 2vw;
+        box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
+      }
+  </style>
+  
+</head>
+<body>
+
+<!---START OF TOPNAVBAR-->
+<nav class="navbar navbar-expand-lg navbar-light sticky-top" style="background-color: rgba(241, 111, 35);">
+  <div class="container-fluid">
+    <a class="navbar-brand d-flex" href="index.html" target="_blank"><img src="zoey_main_logo.jpg" alt="Zoey Logo" width="100" height="60"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    
+    <div class="collapse navbar-collapse" id="mynavbar">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <h6><a class="nav-link text-white" href="index.html" target="_blank">HOME</a></h6>
+        </li>
+        <li class="nav-item">
+          <h6><a class="nav-link text-white" href="Zoey Cafe Dining Page.html" target="_blank">DINING</a></h6>
+        </li>  
+        <li class="nav-item">
+          <h6><a class="nav-link text-white" href="Zoey Cafe Catering Page.html" target="_blank">CATERING</a></h6>
+        </li>
+        <li class="nav-item">
+            <h6><a class="nav-link text-white" href="Zoey Cafe Our Story Page.html" target="_blank">OUR STORY</a></h6>
+        </li>
+        <li class="nav-item dropdown">
+            <h6><a class="nav-link text-white" href="Zoey Cafe Branches Page.html" target="_blank">BRANCHES</a></h6>    
+        </li>
+        <li class="nav-item">
+          <h6><a class="nav-link text-white" href="Zoey Cafe Rates Page.html" target="_blank">RATES</a></h6>
+        </li>
+        
+        <li class="nav-item">
+          <h6><a class="nav-link text-white" href="Zoey Cafe Contact Page.html" target="_blank">CONTACT</a></h6>
+        </li>
+      </ul>
+      
+      <form class="d-flex">
+        <input class="form-control me-2" type="text" placeholder="Search" style="border-radius: 20px;">
+          <button class="btn" type="button" id="searchbutton">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<!---END OF TOPNAVBAR-->  
+<!---SUBHEADER IMG LG Screen-->
+<div class="rates d-none d-md-flex" id="ratescontainerIMG">
+</div>
+
+<!---SUBHEADER IMG LG Screen-->
+<div class="rates d-flex d-md-none" id="ratescontainerIMGsm">
+</div>
+
+<div class="container-fluid" style="text-align: center; justify-align: center; height: 20vh;">
+    <br><span class="text-gray" id="ourcuisine" style="font-size: 4vh; font-family: papyrus;"><b>Our Prices and Rates</b></span><br>
+    <center><img class="d-none d-md-flex" src="line break black.png" alt="line break"></center>
+    <center><img class="d-flex d-md-none" src="line break black small.png" alt="line break"></center>
+</div>
+
+<!---CONTENT-->
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-4" id="colrates" onclick="openTab('b1');" style=""><b>Our Rates</b>
+        </div>
+        <div class="col-sm-4" id="colrates" onclick="openTab('b2');" style=""><b>Additional Services</b>
+        </div>
+        <div class="col-sm-4" id="colrates" onclick="openTab('b3');" style=""><b>Terms and Conditions</b>
+        </div>
+    </div>
+    <div id="b1" class="containerTab display">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn" style="font-size: 2vw;">x</span>
+        <p style="font-size: 2vw;"><b>Catering Rates</b></p>
+            <table class="table-responsive-md table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col" style="width: 15vw;">No. of Pax</th>
+                        <th scope="col">Price per Pax</th>
+                   
+                    </tr>
+                </thead>
+                    <tbody>
+                        <tr>
+                            <td>10-15 persons</td>
+                            <td>650php per person</td>
+                        </tr>
+                        <tr>
+                            <td>20-25 persons</td>
+                            <td>550php per person</td>
+                        </tr>
+                        <tr>
+                            <td>30-35 persons</td>
+                            <td>480php per person</td>
+                        </tr>
+                        <tr>
+                            <td>40-45 persons</td>
+                            <td>420php per person</td>
+                        </tr>
+                        <tr>
+                            <td>50-60 persons</td>
+                            <td>400php per person</td>
+                        </tr>
+                        <tr>
+                            <td>65-95 persons</td>
+                            <td>370php per person</td>
+                        </tr>
+                        <tr>
+                            <td>100-120 persons</td>
+                            <td>340php per person</td>
+                        </tr>
+                    </tbody>
+                </table><br>
+        <p style="font-size: 2vw;"><b>Corkage Fees</b></p>
+            <table class="table-responsive-md table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col" style="width: 10vw;">Price</th>
+                        <th scope="col">Items</th>
+                    </tr>
+                        </thead>
+                            <tbody>
+                                <tr>
+                                    <td>20php</td>
+                                    <td>per Dish from outside</td>
+                                </tr>
+                                <tr>
+                                    <td>300php</td>
+                                    <td>per Lechon brought in from outside</td>
+                                </tr>
+                                <tr>
+                                    <td>300php</td>
+                                    <td>Softdrinks/Beer/Liquor from outside</td>
+                                </tr>
+                                <tr>
+                                    <td>200php</td>
+                                    <td>per Dessert/Cake from outside</td>
+                                </tr>
+                                <tr>
+                                    <td>500php</td>
+                                    <td>Desserts Buffet/Liquor Bar from outside</td>
+                                </tr>
+                            </tbody></table>
+    </div>
+
+    <div id="b2" class="containerTab" >
+        <span onclick="this.parentElement.style.display='none'" class="closebtn" style="font-size: 2vw;">x</span>
+            <p style="font-size: 2vw;"><b>Outside Catering</b></p>
+                <ul>
+                    <li>additional 10% from gross price for service charge and transportation costs</li>
+                    <li>additional charge for mobilization fee for outside-city venues (starts at 1000php)</li>
+                    <li>only buffet table, equipment and services are included. Tables and chairs are not included</li>
+                    <li>catering services are only good for 4 hours from agreed time of event. Additional rates per hour will apply for every succeeding hour</li>
+                </ul><br>
+            <p style="font-size: 2vw;"><b>Tables/Chairs Fees for Outside Catering</b></p>
+                <table class="table-responsive-md table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col" style="width: 15vw;">Rates</th>
+                            <th scope="col">Items</th>
+                   
+                        </tr>
+                    </thead>
+                        <tbody>
+                            <tr>
+                                <td>150php per table</td>
+                                <td>Table with table cloth and table runner (good for 6 pax)</td>
+        
+                            </tr>
+                            <tr>
+                                <td>120php per table</td>
+                                <td>Table with table cloth and table runner (good for 4 pax)</td>
+                            </tr>
+                            <tr>
+                                <td>30php per chair</td>
+                                <td>Monoblock chair with chair cover</td>
+                            </tr>
+                        </tbody>
+                </table><br><br>
+            <p style="font-size: 2vw;"><b>Equipment Charges</b></p>
+                <table class="table-responsive-md table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col" style="width: 15vw;">Rates</th>
+                            <th scope="col">Items</th>
+                                </tr>
+                                    </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1500php per 3 hours</td>
+                                                <td>LCD Projector with Screen</td>
+        
+                                            </tr>
+                                            <tr>
+                                                <td>2000php per 2 hours</td>
+                                                <td>Additional charge for lighting effects brought inside or LED Walls</td>
+                                            </tr>
+                                        </tbody>
+                </table><br>
+        </div>
+
+    <div id="b3" class="containerTab">
+        <span onclick="this.parentElement.style.display='none'" class="closebtn" style="font-size: 2vw;">x</span>
+            <p style="font-size: 2vw;"><b>Terms and Conditions</b></p>
+                <ul>
+                    <li>50% Down Payment from contract price must be made upon signing and confirmation of contract or to secure booking</li>
+                    <li>50% Full Payment on the Day of the Event</li>
+                    <li>20% of the contract price will be forfeited for any cancellation made within seven (7) days prior to event date.</li>
+                    <li>30% surcharge for cancellation made within five (5) days</li>
+                    <li>50% charge for cancellation made within 3 days from event date</li>
+                    <li>100% from contract price will be charged for cancellation made on the day of the event</li>
+                    <li>Zoey Cafe, Co. is not liable for any food provided by the client that may cause hazard for human consumption. A waiver form must be signed by the client for any food brought to the event.
+                    <li>Any losses, breakages of the caterer's equipment during the event will be charged to our client accordingly</li>
+                    <li>Surcharge of 2000php for rebooking/change of event three (3) days prior to the original event date</li>
+                    <li>Event will include four (4) hours use of the venue. Any succeeding hour will be charged 2000php accordingly; for events past 10:00pm, the charge shall be 3000php per hour</li>            
+                    </li>
+                </ul><br>
+      </div>
+</div><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<!-- Button trigger modal for Zoey Contract -->
+<div class="container" id="modalcontainer" style="padding-left: 3vw;">
+<button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal" style="color: white">Click to View Copy of Catering Contract</button>
+
+<!-- Modal for Zoey Contract-->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h6 class="modal-title" id="exampleModalLabel" style="color:black;">Zoey Cafe, Co. Contract for Catering</h6>
+          <button type="button" class="close" data-dismiss="modal"aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+      </div>
+      <div class="modal-body"> 
+        <iframe src="Zoey Cafe Contract for Download.pdf" width="100%" height="400px"></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+    </div>
+  </div>
+</div>
+</div>
+</div><br>
+
+
+<p style="margin-left: 12vw;"><b>*We accept cash, post-dated cheques, credit cards (online & physical swiping), online mode payments like Gcash, Paymaya, Paypal</b></p>
+<br>
+
+<br><br>
+<!---START OF FOOTER-->
+<div class="footer" style="padding: 1vh; padding-bottom: 1vh; padding-top: 2vh; background-color: rgba(241, 111, 35)">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12" style="padding: 2vw;">
+                <div class="card" style="background-color: rgba(241, 111, 35);">
+                    <a href="https://www.foodpanda.ph/restaurant/fsk2/zoey-cafe-ubaldo" target="_blank" style="text-decoration: none; color: white;"><img class="card-img-top" style="width:100%; height: 30vh; background-image:url('foodpanda.webp'); background-size: cover; background-position-y: center;">
+                        <div class="card-body">
+                            <center><h6 class="card-title">Order from FoodPanda</h6></center></a>
+                </div>
+            </div>
+        </div>
+            <div class="col-lg-3 col-md-6 col-sm-12" style="padding: 2vw;">
+                <div class="card" style="background-color: rgba(241, 111, 35);">
+                    <a href="https://food.grab.com/ph/en/restaurant/zoey-cafe-co-ubaldo-laya-delivery/2-C3KEBE2YSA63TN" target="_blank" style="text-decoration: none; color: white;"><img class="card-img-top" style="width:100%; height: 30vh; background-image:url('grab.png'); background-size: cover; background-position-y: top;">
+                        <div class="card-body">
+                            <center><h6 class="card-title">Order from GrabFood</h6></center></a>
+            
+                </div>
+            </div>
+        </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <p style="color: white;">_______________________________</p>
+                <h6 class="text-white">HEADQUARTERS</h6>
+                <p class="text-white"><b>Zoey Cafe Commisary</b></p>
+                <p class="text-white">#008 Woodcock Road Isabel Village, Pala-o, Iligan City, Philippines</p>
+                <i class='fa fa-envelope-o' style="font-size: 1vw; padding-right: 2vw;"></i><a href= "mailto:zoey_cafe@yahoo.com" style="color: white;">zoey_cafe@yahoo.com</a><br>
+                <i class='fa fa-phone' style="font-size: 1vw; padding-right: 2vw;"></i><a href="tel:+632280644" style="color: white;">(063) 228 0644</a><br>
+                <i class='fa fa-mobile-phone' style="font-size: 1vw; padding-right: 2vw;"></i><a href="tel:+639177084448" style="color: white;">(0917) 708 4448</a><br><br>
+                <a href="https://www.google.com/maps/dir//Zoey+Caf%C3%A9+Commissary,+008+Woodcock+Road+Isabel+Village,+Iligan+City/@8.2261217,124.2561966,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x325577d0957e3643:0xf0187b5944ada887!2m2!1d124.2583859!2d8.2260951" class="text-white" target="_blank" rel="noopener"><i class="fa fa-location-arrow" style="padding-left: 0; padding-right: 2vw; font-size: 1vw"></i>Get Directions</a><br><br><br>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <div class="row" id="rowfollowus">
+                    <p style="color: white;">_______________________________</p>
+                    <h3 style="color: white;">Follow Us:</h3>
+                        <div class="col">
+                            <a href="https://www.facebook.com/zoeycafe/" target="_blank" rel="noopener"class="fa fa-facebook" style="margin-left: 3vw;"></a></div>
+                        <div class="col">
+                            <a href="https://www.instagram.com/zoeycafe/?hl=en" target="_blank" rel="noopener" class="fa fa-instagram"></a></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+                </div>
+                <br><br>  
+                <div class="row" style="padding-top: 1vh; padding-bottom: 2vh;">
+                    <h6 style="color: white;">Want to Receive News & Promos?</h6>
+                <form class="form-floating">
+                    <input type="email" class="form-control is-invalid" id="floatingInputInvalid" placeholder="name@example.com" value="" required>
+                        <label for="floatingInputInvalid">Email</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                    <label class="form-check-label" for="invalidCheck" style="color: white;">Yes! I want to receive news & promos</label>
+                                        <div class="invalid-feedback">You must agree before submitting.</div>
+                            </div>
+                                    <button class="btn" type="submit"><b>Submit</b></button>
+                </form>
+                </div>
+            </div>
+    </div>
+
+<!---JS SCRIPTS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<!---JS SCRIPTS for TOGGLE WINDOWS-->    
+    <script>toggleables.forEach((toggleable) => {
+        toggleable.addEventListener('click', toggleImage);
+        });
+        // Hide all elements with class="containerTab", except for the one that matches the clickable grid column
+        function openTab(tabName) {
+            var i, x;
+            x = document.getElementsByClassName("containerTab");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            document.getElementById(tabName).style.display = "block";
+        }
+        </script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+          integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
+          crossorigin="anonymous">
+         </script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 
+          integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" 
+          crossorigin="anonymous">
+         </script>
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+          integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" 
+          crossorigin="anonymous">
+         </script>
+</body>
+</html>
